@@ -1,0 +1,5 @@
+theme: jekyll-theme-slate
+exclude: [ README.md ]
+google_analytics: UA-111886630-1
+plugins:
+  - jekyll-feed
