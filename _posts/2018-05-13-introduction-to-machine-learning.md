@@ -41,7 +41,7 @@ As an example, supervised learning could be applied to the house purchase data s
 
 ## Unsupervised Learning
 
-Unsupervised learning assumes there exists a data set that consists of features but in this case we have no corresponding labels. We further assume that a relationship exists between items in the data set such that the features can be used to group these common items. As in the case of supervised learning, we don't need to know what this relationship is, nor do we need to know what the groupings are.
+Unsupervised learning assumes there exists a data set that consists of features but in this case we have no corresponding labels. In some applications (e.g. clustering) we will further assume that a relationship exists between items in the data set such that the features can be used to group these common items. As in the case of supervised learning, we don't need to know what this relationship is, nor do we need to know what the groupings are.
 
 To demonstrate unsupervised learning let's consider clustering of a customer base. In this problem you have a large amount of data on your customers and you want to group them to understand how you can better serve them. You don't know before hand what these groups are but you aim to learn these groupings using an unsupervised learning algorithm such as K-means clustering.
 
