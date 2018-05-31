@@ -95,5 +95,5 @@ a\cdot\sum_{i}^{N} 1 + b\cdot\sum_{i}^{N}X_{1}^{(i)} & a\cdot\sum_{i}^{N}X_{1}^{
 \end{eqnarray}
 $$
 
-Hence our Hessian defined by equation \\(\ref{eqn:hsscost})\\ is positive semidefinite. Thus our Cost function defined by equations \\(\ref{eqn:mse}\\) and \\(\ref{eqn:hyp}\\) is convex.
+Hence our Hessian defined by equation \\(\ref{eqn:hsscost}\\) is positive semidefinite. Thus our Cost function defined by equations \\(\ref{eqn:mse}\\) and \\(\ref{eqn:hyp}\\) is convex.
 
