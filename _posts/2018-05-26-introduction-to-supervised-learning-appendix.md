@@ -6,7 +6,7 @@ categories: [ Machine Learning ]
 
 # Appendix
 
-In the post [Introduction to Supervised Learning]({ post_url 2018-05-19-introduction-to-supervised-learning }) we claimed to be able to prove the convexity of a Mean Squared Error function with a linear hypothesis function. That is with a loss defined by equation \\(\ref{eqn:mse}\\) and hypothesis function \\(\ref{eqn:hyp}\\) below.
+In the post [Introduction to Supervised Learning]({% post_url 2018-05-19-introduction-to-supervised-learning %}) we claimed to be able to prove the convexity of a Mean Squared Error function with a linear hypothesis function. That is with a loss defined by equation \\(\ref{eqn:mse}\\) and hypothesis function \\(\ref{eqn:hyp}\\) below.
 
 $$
 \begin{equation}
