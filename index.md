@@ -15,12 +15,23 @@ Below is a list of tutorials/articles on Data Science/Machine Learning
 {% for category in site.categories %}
 **{{ category[0] }}**
 <ul>{% for post in category[1] reversed %}
+    {% unless post.url contains "appendix" %}
         <li>
             <a href="{{ post.url }}">
                 {{ post.title }}
             </a>
         </li>
+    {% endunless %}
     {% endfor %}
+</ul>
+**{{ category[0] }} Appendices**
+<ul>
+{% for post in category[1] reversed %}
+{% if post.url contains "appendix" %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
 </ul>
 
 {% endfor %}
+
