@@ -79,7 +79,7 @@ v^T\cdot{}A\cdot{}v & = & \left\lbrack{}\begin{array}{cc}a & b\end{array}\right\
 \\
 
 & = &\left\lbrack\begin{array}{cc}
-a\cdot\sum_{i}^{N} 1 + b\cdot\sum_{i}^{N}X_{1}^{(i)} & a\cdot\sum_{i}^{N}X_{1}^{(i)} & b\cdot\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2}
+a\cdot\sum_{i}^{N} 1 + b\cdot\sum_{i}^{N}X_{1}^{(i)} & a\cdot\sum_{i}^{N}X_{1}^{(i)} + b\cdot\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2}
 \end{array}\right\rbrack
 \left\lbrack \begin{array}{c} a \\ b \end{array}\right\rbrack
 
