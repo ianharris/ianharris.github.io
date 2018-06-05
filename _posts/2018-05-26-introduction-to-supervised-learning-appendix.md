@@ -6,6 +6,8 @@ categories: [ Machine Learning ]
 
 # Appendix
 
+*Note: The following proof is more for mathematical completeness than required knowledge for working in the field; I'm a bit of a mathematics nerd. Generally speaking, data scientists don't spend their days verifying the proofs of convexity of cost functions. Rather, a number of well-known cost functions that have been proven out in the field (such as the cost function below) are used 'off the shelf' so to speak. With that in mind, don't worry if you are unfamiliar with the mathematics below - it won't be required to work on a mahine learning problem.*
+
 In the post [Introduction to Supervised Learning]({% post_url 2018-05-19-introduction-to-supervised-learning %}) we claimed to be able to prove the convexity of a Mean Squared Error function with a linear hypothesis function. That is with a loss defined by equation \\(\ref{eqn:mse}\\) and hypothesis function \\(\ref{eqn:hyp}\\) below.
 
 $$
