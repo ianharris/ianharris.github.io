@@ -12,7 +12,7 @@ In the post [Introduction to Supervised Learning]({% post_url 2018-05-19-introdu
 
 $$
 \begin{equation}
-J(\theta) = \frac{1}{N} \sum_{i}^{N} (h_{\theta}(X^{(i)}) - y^{(i)})\label{eqn:mse}\tag{1}
+J(\theta) = \frac{1}{N} \sum_{i}^{N} (h_{\theta}(X^{(i)}) - y^{(i)})^{2}\label{eqn:mse}\tag{1}
 \end{equation}
 $$
 
@@ -50,7 +50,7 @@ H  &=&  \left\lbrack
 \frac{\partial^{2}J}{\partial\theta_{0}^{2}} \frac{\partial^{2}J}{\partial\theta_{0}\partial\theta_{1}} \\ 
 \frac{\partial^{2}J}{\partial\theta_{1}\partial\theta_{0}} \frac{\partial^{2}J}{\partial\theta_{1}^{2}} 
 \end{array}\right\rbrack \\
-&=& \left\lbrack\begin{array}{cc}
+&=& \frac{2}{N}\left\lbrack\begin{array}{cc}
 \sum_{i}^{N} 1 & \sum_{i}^N X_{1}^{(i)} \\
 \sum_{i}^N X_{1}^{(i)}  & \sum_{i}^N \left(X_{1}^{(i)}\right)^{2} 
 \end{array}\right\rbrack
@@ -72,7 +72,7 @@ where \\(v \in \mathbb{R}^{n}\\). To check if our Hessian matrix is positive sem
 
 $$
 \begin{eqnarray}
-v^T\cdot{}A\cdot{}v & = & \left\lbrack{}\begin{array}{cc}a & b\end{array}\right\rbrack \cdot \left\lbrack\begin{array}{cc}
+v^T\cdot{}A\cdot{}v & = & \left\lbrack{}\begin{array}{cc}a & b\end{array}\right\rbrack \cdot \frac{2}{N}\left\lbrack\begin{array}{cc}
 \sum_{i}^{N} 1 & \sum_{i}^N X_{1}^{(i)} \\
 \sum_{i}^N X_{1}^{(i)}  & \sum_{i}^N \left(X_{1}^{(i)}\right)^{2} 
 \end{array}\right\rbrack
@@ -80,18 +80,17 @@ v^T\cdot{}A\cdot{}v & = & \left\lbrack{}\begin{array}{cc}a & b\end{array}\right\
 
 \\
 
-& = &\left\lbrack\begin{array}{cc}
+& = &\frac{2}{N}\left\lbrack\begin{array}{cc}
 a\cdot\sum_{i}^{N} 1 + b\cdot\sum_{i}^{N}X_{1}^{(i)} & a\cdot\sum_{i}^{N}X_{1}^{(i)} + b\cdot\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2}
 \end{array}\right\rbrack
 \left\lbrack \begin{array}{c} a \\ b \end{array}\right\rbrack
 
 \\
 
-& = & a^{2}\sum_{i}^{N}1 + a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + b^{2}\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2} \\
-& = & a^{2}\sum_{i}^{N}1 + 2\cdot{}a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + b^{2}\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2} \\ 
-& = & a^{2}\sum_{i}^{N}1 + 2\cdot{}a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + b^{2}\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2} \\
-& = & \sum_{i}^{N} a^{2} + 2\cdot{}a\cdot{}b\cdot{}X_{1}^{(i)} + b^{2}\left(X_{1}^{(i)}\right)^{2} \\
-& = & \sum_{i}^{N} \left(a + b\cdot{}X_{1}^{(i)}\right)^{2} \ge 0
+& = & \frac{2}{N}\left(a^{2}\sum_{i}^{N}1 + a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + b^{2}\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2}\right) \\
+& = & \frac{2}{N}\left(a^{2}\sum_{i}^{N}1 + 2\cdot{}a\cdot{}b\sum_{i}^{N}X_{1}^{(i)} + b^{2}\sum_{i}^{N}\left(X_{1}^{(i)}\right)^{2}\right) \\ 
+& = & \frac{2}{N}\sum_{i}^{N} a^{2} + 2\cdot{}a\cdot{}b\cdot{}X_{1}^{(i)} + b^{2}\left(X_{1}^{(i)}\right)^{2} \\
+& = & \frac{2}{N}\sum_{i}^{N} \left(a + b\cdot{}X_{1}^{(i)}\right)^{2} \ge 0
 
 
 \end{eqnarray}
