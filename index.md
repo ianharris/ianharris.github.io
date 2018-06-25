@@ -2,7 +2,10 @@
 title: "Ian Harris"
 ---
 
-![Profile]({{ "/assets/profile.jpg" }}){:style="width:150px; height=150px;float:left;margin:10px;"}I am a Software Engineer currently working in the area of Data and Machine Learning Engineering. I aim to create a number of tutorials and articles on the topics of Data Science and Machine Learning. The content will be aimed at people new to the field and will hopefully serve as a useful learning tool.
+![ML]({{ "/assets/machine-learning.jpg" }}){:style="width:640px; height=400px;float:left;margin:10px;"}
+<br/>
+<br/>
+I am a Software Engineer currently working in the area of Data and Machine Learning Engineering. I aim to create a number of tutorials and articles on the topics of Data Science and Machine Learning. The content will be aimed at people new to the field and will hopefully serve as a useful learning tool.
 
 There are only a few tutorials/articles here so far but I hope to add them soon. If you want to keep up to date, check out the RSS feed link below.
 
