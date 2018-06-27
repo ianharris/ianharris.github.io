@@ -4,7 +4,7 @@ date:   2018-06-11 12:00:00 +0000
 categories: [ Machine Learning ]
 ---
 
-# Introduction
+# Introduction to Linear Regression
 
 In our last article we [introduced Supervised Learning]({% post_url 2018-05-19-introduction-to-supervised-learning %}) and used as examples of Supervised Learning, equations relevant to Linear Regression with Gradient Descent. In this post we will look at using Linear Regression with Gradient Descent to learn a relationship between a set of features and labels. 
 

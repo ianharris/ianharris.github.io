@@ -89,4 +89,4 @@ Equations \\(\ref{eqn:updtht0final}\\)  and \\(\ref{eqn:updtht1final}\\) can be 
 
 <hr/>
 
-In the next post we will look at an application of Supervised Learning; specifically, Linear Regression using Mean Squared Error and Gradient Descent. This will give us a much better view of a practical application of Supervised Learning as well as indroduce us to some of the common machine learning libraries.
+In the [next post]({% post_url 2018-06-11-introduction-to-linear-regression %}) we will look at an application of Supervised Learning; specifically, Linear Regression using Mean Squared Error and Gradient Descent. This will give us a much better view of a practical application of Supervised Learning as well as indroduce us to some of the common machine learning libraries.
