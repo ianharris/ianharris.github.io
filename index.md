@@ -2,14 +2,12 @@
 title: "Ian Harris"
 ---
 
-![ML]({{ "/assets/machine-learning.jpg" }}){:style="width:640px; height=400px;float:left;margin:10px;"}
-<br/>
-<br/>
-I am a Software Engineer currently working in the area of Data and Machine Learning Engineering. I aim to create a number of tutorials and articles on the topics of Data Science and Machine Learning. The content will be aimed at people new to the field and will hopefully serve as a useful learning tool.
+![terminal-code]({{ "/assets/terminal-code.png" }}){:style="width=680px; height=330px; margin-bottom: 10px;"}
 
-There are only a few tutorials/articles here so far but I hope to add them soon. If you want to keep up to date, check out the RSS feed link below.
+Below is a list of articles/tutorials on the topics of data science and data engineering as well as some more general software engineering posts. There are only a few tutorials/articles here so far but I hope to add them soon. If you want to keep up to date, check out the RSS feed link below.
 
-<div style="clear: both;"></div>
+If you want to know more about me, check out my LinkedIn profile with the link below or head over to this site's [about]({{ "/about.html" }}) page.
+
 <a href="https://twitter.com/_ianharris?ref_src=twsrc%5Etfw"><img src="/assets/twitter.png" width="21" height="21"/></a>
 <a href="https://www.linkedin.com/in/ian-harris-a9954652"><img src="/assets/linkedin.png" width="30" height="21"/><a/>
 <a href="https://www.iharris.net/feed.xml"><img src="/assets/rss.png" width="21" height="21"/><a/>
