@@ -20,7 +20,7 @@ The validation set is used to help tune parameters of our algorithm. Many algori
 
 At first it may seem like the validation set is redundant; that the test set could be used for tuning. But this is not the case. If an algorithm's parameters need to be tuned, it is vital to have a separate validation set. Consider what would happen if we used the test set for tuning. We would train our model a number of times using various parameter sets and then choose the parameter set that had the best model performance when evaluated against test set. But this selection will ensure the model performs well specifically on the test set (as that is how we selected the parameters) and so the model may appear to be more performant than it actually is when we assess it.
 
-# Simplififed for our Demonstration
+# Simplified for our Demonstration
 
 In our Linear Regression with Gradient Descent example we didn't use a test or validation set. We instead used all our data for training. Let's look at why. In the case of both data sets, the answer comes down to simplicity.
 
