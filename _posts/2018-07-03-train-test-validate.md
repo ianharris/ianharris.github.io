@@ -14,11 +14,11 @@ Let's begin by discussing the motivation for each of our data sets.
 
 The training data set needs little explanation. Machine learning requires a set of data to learn from. In our Linear Regression demonstration, the training set was used to learn the relationship between our set of features \\((X\_{0}, X\_{1})\\) and our set of labels \\(y\\).
 
-The test data set is used to test the relationship we learn. Without a test data set we run the risk of 'overfitting' our model on our training set. We'll discuss the problem of overfitting in a future post but at a high level overfitting occurs when the relationship the model learns performs well in predicting labels for the training data set but performs poorly when predicting labels for new data. Obviously if our model doesn't provide accurate predictions on data that isn't in our training set it isn't very useful.
+The test data set is used to test the relationship we learn. Testing the final model with the test set allows us to provide measurements of the models accuracy on a set of data samples that were not used during training.
 
-The validation set is used to help tune parameters of our algorithm. Many algorithms have parameters that can be set independent of our data set; e.g. the learning rate \\(\alpha\\) in our Linear Regression demonstration. These parameters can be tuned to improve model performance. Tuning the parameters is achieved by training with a specific set of parameters and then assessing the effect of that parameter set using the validation set.
+The validation set can be used to both help tune parameters of our algorithm and validate that our model isn't overfitting (we'll discuss the problem of overfititng in our [next post]({% post_url 2018-07-11-overfitting %})). Many algorithms have parameters that can be set independent of our data set; e.g. the learning rate \\(\alpha\\) in our Linear Regression demonstration. These parameters can be tuned to improve model performance. Tuning the parameters is achieved by training with a specific set of parameters and then assessing the effect of that parameter set using the validation set.
 
-At first it may seem like the validation set is redundant; that the test set could be used for tuning. But this is not the case. If an algorithm's parameters need to be tuned, it is vital to have a separate validation set. Consider what would happen if we used the test set for tuning. We would train our model a number of times using various parameter sets and then choose the parameter set that had the best model performance when evaluated against test set. But this selection will ensure the model performs well specifically on the test set (as that is how we selected the parameters) and so the model may appear to be more performant than it actually is when we assess it.
+At first it may seem like the validation set is redundant; that the test set could be used for tuning or validation. But this is not the case. If an algorithm's parameters need to be tuned, or the model validated, it is vital to have a separate validation set. Consider what would happen if we used the test set. We would train our model a number of times using various parameter sets and then choose the parameter set that had the best model performance when evaluated against the test set. But this selection will ensure the model performs well specifically on the test set (as that is how we selected the parameters) and so the model may appear to be more performant than it actually is.
 
 # Simplified for our Demonstration
 
@@ -26,7 +26,7 @@ In our Linear Regression with Gradient Descent example we didn't use a test or v
 
 We'll consider the use of a test set first. Usually we will use our test set to assess the accuracy of our trained model. However, in the case of our demonstration we knew the target function \\(h(X)\\). Hence, assessing the accuracy of the model could be achieved by simply comparing the final hypothesis function \\(h\_{\theta}(X)\\) to the known target function \\(h(X)\\). 
 
-We next consider the use of a validation set. The only parameter we could have tuned in our demonstration was the learning rate \\(\alpha\\). As the demonstration was such a simple case any reasonable choice of learning rate would have guaranteed the model would learn the relationship. With that in mind, we selected the learning rate without the use of a validation set.
+We next consider the use of a validation set. The only parameter we could have tuned in our demonstration was the learning rate \\(\alpha\\). As the demonstration was such a simple case any reasonable choice of learning rate would have guaranteed the model would learn the relationship. With that in mind, we selected the learning rate without the use of a validation set. Additionally, as our data set was generated from a known target function, the training set was representative of the sample space (the set of all possible samples) and contained no noise. As a result our model couldn't overfit as it would always generalize well to new data samples from the sample space.
 
 # Sourcing the Datasets
 
@@ -34,5 +34,5 @@ Now that we understnd the functions of the three data sets (training, test and v
 
 # Up Next
 
-In our next post we'll discuss two common problems faced in machine learning; namely overfitting and underfitting as well as methods to identify and solve both problems.
+In our [next post]({% post_url 2018-07-11-overfitting %}) we'll discuss a common problem faced in machine learning; namely overfitting as well as methods to identify and handle it.
 

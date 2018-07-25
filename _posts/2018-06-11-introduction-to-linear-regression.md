@@ -113,6 +113,6 @@ In the case of this specific experiment we knew in advance the target function \
 
 # Wrap up
 
-In this tutorial we demonstrated how Linear Regression with Gradient Descent could be applied. However, it was to a very simplified data set. Specifically, the data set was formed from a well known and very simple mathematical function. In reality, it would be extremely unlikely to have a data set that could be modeled by a single function for all samples. When we do have more complex data there are issues that we must address that weren't a concern in this case, e.g. model undefitting or overfitting. We will look at these issues in a future post.
+In this tutorial we demonstrated how Linear Regression with Gradient Descent could be applied. However, it was to a very simplified data set. Specifically, the data set was formed from a well known and very simple mathematical function. In reality, it would be extremely unlikely to have a data set that could be modeled by a single function for all samples. When we do have more complex data there are issues that we must address that weren't a concern in this case, e.g. model undefitting or [overfitting]({% post_url 2018-07-11-overfitting %}). We will look at these issues in a set of future posts.
 
-
+In our [next post]({% post_url 2018-07-03-train-test-validate %}) we'll look at how real-world data sets differ from the one we have here, and introduce some of the differences with dealing with that data.
